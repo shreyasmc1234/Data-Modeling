@@ -1,4 +1,4 @@
 # Data-Modeling
-This Repo contains different data modeling use cases
 
+### Small Finance Bank
 ![image](banking/image.png)
