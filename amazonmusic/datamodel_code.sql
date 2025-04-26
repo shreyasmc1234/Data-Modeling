@@ -3,7 +3,7 @@ create schema amazon;
 
 --Fact Table
 
-create table Orders(
+create or replace table Orders(
 order_id int primary key,
 order_date date,
 order_amount decimal(20,4),
@@ -11,6 +11,7 @@ order_mode string,
 customer_id int,
 booking_id int,
 author_id int,
+reviewer_id int,
 foreign key (customer_id) references customers(customer_id),
 foreign key (booking_id) references bookings(booking_id),
 foreign key (author_id) references authors(author_id),
