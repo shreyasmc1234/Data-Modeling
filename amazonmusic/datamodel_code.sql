@@ -15,7 +15,7 @@ reviewer_id int,
 foreign key (customer_id) references customers(customer_id),
 foreign key (booking_id) references bookings(booking_id),
 foreign key (author_id) references authors(author_id),
-foreign key (customer_id) references reviews(reviewer_id)
+foreign key (reviewer_id) references reviews(reviewer_id)
 );
 
 --Dimension Tables
